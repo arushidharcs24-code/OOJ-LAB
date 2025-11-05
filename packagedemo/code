@@ -1,0 +1,15 @@
+package mypackage;
+public class Addition {
+public int add (int a, int b)
+{
+    return a+b;
+}}
+import mypackage.Addition;
+public class Main{
+    public static void main(String[] args) {
+        Addition obj = new Addition();
+        int result = obj.add(15, 32);
+        System.out.println("Result: " + result);
+    }
+    
+}
