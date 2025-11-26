@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ListIndexProgram {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String[] items = {"apple", "banana", "cherry", "date"};
+
+        System.out.print("Enter an index: ");
+
+        try {
+            int index = sc.nextInt();
+            System.out.println("Item: " + items[index]);
+
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Error: Index out of range.");
+        } catch (Exception e) {
+            System.out.println("Error: Enter a valid integer.");
+        }
+    }
+}
